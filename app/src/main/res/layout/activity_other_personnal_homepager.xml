@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zhy="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top" />
+
+    <!--背景-->
+    <ImageView
+        android:id="@+id/id_user_head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_below="@+id/activity_top"
+        android:background="@drawable/bg_personal_homepage"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/infoLy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/circle_personal_white_bg">
+
+        <!--头像-->
+        <ImageView
+            android:id="@+id/id_user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_sex_male" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--聊天-->
+                <TextView
+                    android:id="@+id/id_chat_ta"
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/circle_attention_btn"
+                    android:gravity="center"
+                    android:text="聊天"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_h" />
+
+                <!--性别 关注他-->
+                <TextView
+                    android:id="@+id/id_attention_ta"
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_attention_btn"
+                    android:gravity="center"
+                    android:text="关注Ta"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_h" />
+
+            </LinearLayout>
+
+
+
+            <!--昵称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/personal_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称 : "
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+                <TextView
+                    android:id="@+id/id_nick_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+                <!--学校-->
+                <TextView
+                    android:id="@+id/id_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/item_margin"
+                    android:text="华中师范大学"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/personal_school_text_size" />
+            </LinearLayout>
+
+            <!--家乡-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/personal_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家乡 : "
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+                <TextView
+                    android:id="@+id/id_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="@string/lazy_no_write"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+            </LinearLayout>
+
+            <!--个性签名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/personal_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签名 : "
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+                <TextView
+                    android:id="@+id/id_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lazy_no_write"
+                    android:maxLines="3"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+            </LinearLayout>
+
+
+
+            <!--兴趣-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/personal_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="兴趣 : "
+                    android:textColor="@color/colorPersonalTextBlue"
+
+                    android:textSize="@dimen/personal_text_size" />
+
+                <TextView
+                    android:id="@+id/id_interest_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lazy_not_choose"
+                    android:textSize="@dimen/personal_text_size"
+                    android:visibility="gone" />
+
+                <!--兴趣-->
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/id_flowlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    zhy:max_select="-1" />
+            </LinearLayout>
+
+
+            <!--印象-->
+            <LinearLayout
+                android:id="@+id/id_impressLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/personal_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="印象 : "
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+                <TextView
+                    android:id="@+id/id_impress"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="还没人给Ta印象"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/arrow_to_size"
+                    android:layout_height="@dimen/arrow_to_size"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/arrow_to" />
+            </LinearLayout>
+
+
+            <!--主页-->
+            <RelativeLayout
+                android:id="@+id/id_homePageLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/personal_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/id_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="主页 : "
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size" />
+
+                <TextView
+                    android:id="@+id/id_home_page_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_text"
+                    android:text="@string/lazy_not_pub"
+                    android:textSize="@dimen/personal_text_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/id_iv1"
+                    android:layout_width="@dimen/personal_img_size"
+                    android:layout_height="@dimen/personal_img_size"
+                    android:layout_marginLeft="@dimen/personal_img_margin_size"
+                    android:layout_toRightOf="@+id/id_home_page_text"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/id_iv2"
+                    android:layout_width="@dimen/personal_img_size"
+                    android:layout_height="@dimen/personal_img_size"
+                    android:layout_marginLeft="@dimen/personal_img_margin_size"
+                    android:layout_toRightOf="@+id/id_iv1"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/id_iv3"
+                    android:layout_width="@dimen/personal_img_size"
+                    android:layout_height="@dimen/personal_img_size"
+                    android:layout_marginLeft="@dimen/personal_img_margin_size"
+                    android:layout_toRightOf="@+id/id_iv2"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/colorPersonalTextBlue"
+                    android:textSize="@dimen/personal_text_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/id_arrow_to"
+                    android:layout_width="@dimen/arrow_to_size"
+                    android:layout_height="@dimen/arrow_to_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="end"
+                    android:src="@drawable/arrow_to"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--头像-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_user_head_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="160dp"
+        android:src="@mipmap/default_head_male"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="2dp" />
+
+</RelativeLayout>

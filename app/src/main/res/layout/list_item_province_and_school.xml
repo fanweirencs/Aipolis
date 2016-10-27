@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="50dp"
+    android:id="@+id/id_school_Layout"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/activity_padding_big">
+
+    <TextView
+        android:id="@+id/id_school"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:text="重庆医科大学"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/title_text_h" />
+
+</LinearLayout>
+

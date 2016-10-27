@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--3F51B5-->
+    <!--基本的背景蓝-->
+    <color name="colorPrimary">#0385FF</color>
+    <!--基本的灰色-->
+    <color name="colorGray">#B0B0B0</color>
+
+    <!--抽屉蓝色-->
+    <color name="colorDrawableBlue">#1990FF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ef8888</color>
+    <!--白色-->
+    <color name="colorWhite">#FFFFFF</color>
+    <!--纯黑-->
+    <color name="colorBlack">#000000</color>
+
+
+    <!--底部图标-->
+    <color name="colorTitle">#38373d</color>
+    <!--底部水平线-->
+    <color name="colorBomLine">#88aaaaaa</color>
+    <!--底部图标颜色-->
+    <color name="colorTabLine">#BDBDBD</color>
+    <color name="colorTabBlue">#86c9f6</color>
+
+
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#455C65</color>
+    <color name="color_tab_4">#00886A</color>
+
+
+
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+
+    <!--下拉刷新头部的背景颜色-->
+    <color name="head_bg">#333333</color>
+
+    <!--互助背景颜色-->
+    <color name="help_bg">#97c0e7</color>
+    <color name="colorHelpTextGreen">#4CAF50</color>
+    <color name="colorHelpTextRed">#ff3c3c</color>
+
+    <!--登录界面水平线颜色-->
+    <color name="colorLine">#BDBDBD</color>
+
+
+    <!--兴趣界面按钮颜色-->
+    <color name="colorInterestBtn">#ff3c3c</color>
+
+
+    <!--个人主页 字体颜色-->
+
+    <color name="colorPersonalTextBlue">#0385FF</color>
+    <color name="colorPersonalButtonRed">#ff3c3c</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="color_theme">#489cfa</color>
+
+    <color name="color_emote_divder">#ffa1a1a1</color>
+    <color name="color_bottom_bg">#272a2e</color>
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="color_bottom_text_press">#4f9ef6</color>
+    <color name="text_gray">#969696</color>
+    <color name="msg_chat_bg">#eceff4</color>
+
+    <color name="theme_bg_color">#f0f2f5</color>
+    <color name="c_f98800">#ed4e23</color>
+    <color name="base_bg">#ffffff</color>
+    <color name="dialog_color_title">#f82c22</color>
+    <color name="guide_color">#898989</color>
+
+    <color name="common_bg">#fcfcfc</color>
+    <color name="color_99">#999999</color>
+    <color name="color_line">#dadada</color>
+    <color name="color_chat_send_status">#818181</color>
+    <color name="color_msg_system_time_bg">#20000000</color>
+    <color name="color_1e1e1e">#1e1e1e</color>
+    <color name="color_b4">#b4b4b4</color>
+</resources>

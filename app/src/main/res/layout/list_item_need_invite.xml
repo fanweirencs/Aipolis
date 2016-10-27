@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/help_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_help_user_head"
+            android:layout_width="@dimen/head_img_size"
+            android:layout_height="@dimen/head_img_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:background="#FFFFFF"
+
+            android:src="@mipmap/default_head_male" />
+        <!--内容-->
+        <TextView
+            android:id="@+id/id_help_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_timeAndLocationLy"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="@dimen/activity_padding_big"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="6"
+            android:textColor="#000000"
+            android:textSize="16sp">
+
+        </TextView>
+        <!--时间-->
+        <TextView
+            android:id="@+id/id_help_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/id_help_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_padding_big"
+            android:text="一分钟前"
+            android:textColor="#ef8888"
+            android:textSize="12sp" />
+        <!--性别-->
+        <ImageView
+            android:id="@+id/id_user_sex"
+            android:layout_width="@dimen/sex_size"
+            android:layout_height="@dimen/sex_size"
+            android:layout_below="@+id/id_help_title"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/id_help_name"
+            android:src="@drawable/ic_sex_male" />
+        <!--姓名-->
+        <TextView
+            android:id="@+id/id_help_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_help_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/id_help_user_head"
+            android:text="北极星"
+            android:textColor="#0385ff" />
+        <!--标题-->
+        <TextView
+            android:id="@+id/id_help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/id_help_name"
+            android:layout_marginTop="17dp"
+            android:text="求助"
+            android:textColor="#0385ff"
+            android:textSize="18sp" />
+
+
+        <!--类别  例如  运动|足球-->
+        <LinearLayout
+            android:id="@+id/id_styleLy"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/id_help_user_head"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding_small"
+            android:layout_marginLeft="@dimen/invite_style_margin2"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/help_biaoqian"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:id="@+id/id_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorHelpTextRed"
+                android:text="运动 | 足球"
+                />
+        </LinearLayout>
+
+        <!--邀约 时间 地点  -->
+        <LinearLayout
+            android:id="@+id/id_timeAndLocationLy"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/id_styleLy"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding_small"
+            android:layout_marginLeft="@dimen/invite_style_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/id_time"
+                android:drawableLeft="@drawable/help_time"
+                android:layout_width="wrap_content"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorHelpTextGreen"
+                android:text="6-15  16.20"
+                />
+
+
+            <TextView
+                android:id="@+id/id_location"
+                android:layout_marginLeft="@dimen/help_margin_left"
+                android:drawableLeft="@drawable/help_location"
+                android:layout_width="wrap_content"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorHelpTextGreen"
+                android:text="佑铭体育场"
+                />
+        </LinearLayout>
+
+
+        <!--地址 学校 评论-->
+        <RelativeLayout
+            android:id="@+id/bottom_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_help_content"
+            android:layout_marginLeft="@dimen/activity_padding_big"
+            android:layout_marginRight="@dimen/activity_padding_big">
+
+            <TextView
+                android:id="@+id/id_help_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/activity_padding_small"
+                android:text="华中师范大学" />
+
+            <TextView
+                android:id="@+id/id_help_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_toLeftOf="@+id/right"
+                android:drawableLeft="@drawable/ic_comment_nomal"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:paddingBottom="@dimen/activity_padding_small"
+                android:text="00"
+                android:textColor="#0385ff" />
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/id_img_isDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/help_not" />
+
+                <TextView
+                    android:id="@+id/id_text_isDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="未完成"
+                    android:textSize="@dimen/title_text_s" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

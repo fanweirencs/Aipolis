@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0385ff" >
+    
+    <TextView 
+        android:id="@+id/xuanze_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50px"/>
+     <ImageView 
+        android:id="@+id/xuanze01"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/xuanze_tv"
+        android:layout_marginTop="50dp"    
+        android:onClick="xuanze01"   
+        android:src="@drawable/xuanze01"/>
+     
+    <ImageView 
+        android:id="@+id/xuanze02"
+        android:layout_width="120dp" 
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/xuanze01"
+        android:layout_below="@+id/xuanze01"
+        android:layout_marginTop="40dp"
+        android:onClick="xuanze02"
+        android:src="@drawable/xuanze02"/>
+    <ImageView 
+        android:id="@+id/xuanze03"
+        android:layout_width="125dp"
+        android:layout_height="182dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/xuanze03"/>
+    <ImageView 
+        android:id="@+id/xuanze04"
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="xuanze03"
+        android:src="@drawable/xuanze04"/>
+    
+
+</RelativeLayout >
+

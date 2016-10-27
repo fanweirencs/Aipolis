@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+<View
+    android:layout_width="wrap_content"
+    android:scaleType="fitXY"
+    android:layout_height="1dp"
+    android:background="@color/colorTabLine"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="horizontal">
+    <!--首页-->
+    <LinearLayout
+        android:id="@+id/id_tab_index"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <ImageButton
+            android:id="@+id/id_tab_index_img"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_index_normal" />
+
+    </LinearLayout>
+    <!--消息-->
+    <LinearLayout
+        android:id="@+id/id_tab_news"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/id_tab_news_img"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_news_normal" />
+
+    </LinearLayout>
+
+    <!--发现-->
+    <LinearLayout
+        android:id="@+id/id_tab_find"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/id_tab_find_img"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_find_normal" />
+
+    </LinearLayout>
+    <!--我的-->
+    <LinearLayout
+        android:id="@+id/id_tab_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/id_tab_mine_img"
+            android:layout_width="@dimen/tab_icon_size"
+            android:layout_height="@dimen/tab_icon_size"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_mine_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_size"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big">
+        <!--菜单按钮 打开或者关闭抽屉-->
+        <Button
+            android:id="@+id/id_menu_btn"
+            android:layout_width="@dimen/top_icon_size"
+            android:layout_height="@dimen/top_icon_size"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu" />
+
+        <!--互助 邀约-->
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/id_stLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            tl:tl_bar_color="@color/colorPrimary"
+            tl:tl_indicator_color="@color/colorWhite"
+            tl:tl_indicator_corner_radius="15dp"
+            tl:tl_tab_padding="20dp"
+            tl:tl_textSelectColor="@color/colorPrimary" />
+
+        <!--发布-->
+        <ImageButton
+            android:id="@+id/id_pub"
+            android:layout_width="@dimen/top_icon_size"
+            android:layout_height="@dimen/top_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_add" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

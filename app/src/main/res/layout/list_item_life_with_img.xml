@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_padding_small"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingRight="@dimen/item_margin">
+        <!--头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_user_head_img"
+            android:layout_width="@dimen/head_img_size"
+            android:layout_height="@dimen/head_img_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/default_head_male" />
+        <!--姓名-->
+        <TextView
+            android:id="@+id/id_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_toRightOf="@+id/id_user_head_img"
+            android:text="昵称"
+            android:textColor="@color/colorPrimary" />
+        <!--性别-->
+        <ImageView
+            android:id="@+id/id_user_sex"
+            android:layout_width="@dimen/sex_size"
+            android:layout_height="@dimen/sex_size"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_toRightOf="@+id/id_user_name"
+            android:src="@drawable/ic_sex_male" />
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/id_life_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_user_name"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_toRightOf="@+id/id_user_head_img"
+            android:text="3小时前"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/title_text_s" />
+
+
+        <TextView
+            android:id="@+id/id_user_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/id_user_name"
+            android:text="华中师范大学"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <!--内容-->
+    <TextView
+        android:id="@+id/id_life_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/item_margin"
+        android:maxLines="6"
+        android:paddingBottom="@dimen/item_margin"
+        android:paddingLeft="@dimen/item_margin"
+        android:paddingRight="@dimen/item_margin"
+        android:paddingTop="@dimen/activity_padding_small"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/title_text_h" />
+
+
+    <!--九宫格图片-->
+    <com.lzy.ninegrid.NineGridView
+        android:id="@+id/id_nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_padding_small"
+        android:paddingTop="@dimen/activity_padding_small"
+        app:ngv_mode="fill" />
+
+    <!--点赞数 评论数-->
+    <!--<LinearLayout-->
+    <!--android:layout_marginRight="@dimen/item_margin"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/item_margin"-->
+    <!--android:orientation="horizontal">-->
+    <!--<TextView-->
+    <!--android:id="@+id/id_like_num"-->
+    <!--android:text="0"-->
+    <!--android:drawablePadding="@dimen/item_margin"-->
+    <!--android:drawableLeft="@drawable/ic_love_nomal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginRight="@dimen/activity_horizontal_margin"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:id="@+id/id_comment_num"-->
+    <!--android:text="0"-->
+    <!--android:drawablePadding="@dimen/item_margin"-->
+    <!--android:drawableLeft="@drawable/ic_comment_nomal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:orientation="horizontal">
+
+        <!--浏览量-->
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/id_look_sum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/life_browser"
+            android:drawablePadding="6dp"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/id_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_love_nomal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/id_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_comment_nomal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>

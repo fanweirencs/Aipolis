@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="school">
+
+    </dbname>
+
+    <version value="1">
+
+    </version>
+
+    <list>
+        <mapping class="com.aibang.aipolis.model.Province">
+
+        </mapping>
+        <mapping class="com.aibang.aipolis.model.School">
+
+        </mapping>
+    </list>
+</litepal>

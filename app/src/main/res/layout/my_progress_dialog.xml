@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/confirm_dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:text="Message Title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/id_progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dip"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--&lt;!&ndash; 取消按钮 &ndash;&gt;-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_cancel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Cancel"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#0072c6"-->
+        <!--android:background="@drawable/confirm_dialog_cancel_selector"-->
+        <!--android:textSize="15sp" />-->
+
+        <!--&lt;!&ndash; 确认按钮 &ndash;&gt;-->
+
+        <!--<View-->
+        <!--android:layout_width="1px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="#c5c5c5"/>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_ok"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="OK"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#0072c6"-->
+        <!--android:background="@drawable/confirm_dialog_ok_selector"-->
+        <!--android:textSize="15sp" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

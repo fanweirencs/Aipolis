@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--顶部-->
+        <include layout="@layout/content_top" />
+
+        <!--问题和建议-->
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/question_and_suggestions"
+            android:textSize="@dimen/title_text_xh" />
+        <!--水平线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+        <EditText
+            android:id="@+id/id_opinions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/thinks_your_opinion"
+            android:maxLines="5"
+            android:minLines="5"
+            android:paddingBottom="@dimen/activity_padding_small"
+            android:paddingRight="@dimen/activity_padding_small"
+            android:paddingTop="@dimen/activity_padding_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+
+        <!--输入框 填写意见建议-->
+        <!--水平线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/picture_and_question"
+            android:textSize="@dimen/title_text_xh" />
+        <!--水平线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+
+        <!--图片-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add_photo"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginRight="@dimen/size_32"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/id_question_img" />
+        <!--水平线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/connect_phone"
+            android:textSize="@dimen/title_text_xh" />
+        <!--水平线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+
+        <!--电话-->
+        <EditText
+            android:id="@+id/id_phone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="选填,便于我们和您联系"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/activity_padding_small"
+            android:paddingRight="@dimen/activity_padding_small"
+            android:paddingTop="@dimen/activity_padding_small" />
+        <!--水平线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBomLine" />
+
+        <Button
+            android:layout_marginTop="@dimen/size_32"
+            android:id="@+id/id_submit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_submit_bg"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title_text_h"
+            android:text="@string/sure_submit" />
+
+    </LinearLayout>
+</ScrollView>

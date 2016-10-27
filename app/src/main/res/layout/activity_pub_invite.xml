@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/help_bg"
+    android:orientation="vertical">
+    <!--顶部-->
+    <include layout="@layout/pub_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"/>
+
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/help_height"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/help_margin_top"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 标题："
+            android:textColor="#0385ff"
+            android:textSize="@dimen/title_text_xh" />
+
+        <EditText
+            android:id="@+id/id_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLength="10"
+            android:layout_height="match_parent"
+            android:hint="十个字以内"
+            android:background="@null"
+            android:cursorVisible="true" >
+        </EditText>
+    </LinearLayout>
+
+    <!--类别-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/help_height"
+        android:layout_marginTop="@dimen/help_margin_top"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="标签："
+            android:gravity="center"
+            android:paddingLeft="@dimen/item_margin"
+            android:background="@color/colorWhite"
+            android:textColor="#0385ff"
+            android:textSize="@dimen/title_text_xh" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/activity_padding_small"
+            android:layout_marginRight="@dimen/activity_padding_small"
+            android:src="@drawable/help_biaoqian"
+            />
+
+        <LinearLayout
+            android:layout_width="108dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+            <Spinner
+
+                android:id="@+id/id_style"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+
+        <!--子类别-->
+        <EditText
+            android:id="@+id/id_childStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:maxLength="12"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/colorWhite"
+            android:hint="输入子类别"/>
+
+        <!--android:entries="@array/style_invite"-->
+    </LinearLayout>
+
+    <!--事件-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/help_margin_top"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 事情："
+            android:textColor="#0385ff"
+            android:textSize="@dimen/title_text_xh" />
+
+        <EditText
+            android:id="@+id/id_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:padding="@dimen/activity_padding_small"
+            android:hint="输入邀约事件的详细信息"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:inputType="textMultiLine">
+        </EditText>
+    </LinearLayout>
+
+    <!--时间-->
+    <LinearLayout
+        android:id="@+id/id_timeLy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/help_height"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/help_margin_top"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 时间："
+            android:textColor="#0385ff"
+            android:textSize="@dimen/title_text_xh" />
+
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="标明具体时间"
+            android:textSize="@dimen/title_text_m"
+            android:gravity="center_vertical"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <!--地点-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/help_height"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/help_margin_top"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 地点："
+            android:textColor="#0385ff"
+            android:textSize="@dimen/title_text_xh" />
+
+        <EditText
+            android:id="@+id/id_location"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLength="18"
+            android:layout_height="match_parent"
+            android:hint="标明具体地点"
+            android:background="@null"
+            android:cursorVisible="true" >
+        </EditText>
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"/>
+
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@+id/activity_top"
+        android:gravity="center"
+        android:text="(以后您还可以继续添加)"
+        android:textColor="@color/colorInterestBtn" />
+
+
+    <GridView
+        android:id="@+id/id_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_finish"
+        android:layout_below="@+id/id_text"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_padding_big"
+        android:layout_marginLeft="@dimen/activity_padding_big"
+        android:layout_marginRight="@dimen/activity_padding_big"
+        android:horizontalSpacing="@dimen/interest_grid_padding"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/interest_grid_padding">
+
+    </GridView>
+
+    <Button
+        android:id="@+id/id_finish"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_finish_btn"
+        android:layout_marginBottom="@dimen/activity_padding_small"
+        android:layout_marginTop="@dimen/activity_padding_small"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/title_text_xh"
+        android:onClick="finish"
+        android:text="完成" />
+</RelativeLayout>

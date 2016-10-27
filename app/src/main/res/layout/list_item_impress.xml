@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+    <!--头像  昵称 性别-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:gravity="center_vertical"
+       android:layout_height="wrap_content">
+       <!--头像-->
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/id_user_head_img"
+           android:layout_width="@dimen/head_img_size"
+           android:layout_height="@dimen/head_img_size"
+           android:src="@mipmap/default_head_male" />
+       <TextView
+           android:id="@+id/id_nick_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/colorPrimary"
+           android:layout_marginLeft="8dp"
+           android:text="像孩子"
+           android:textSize="@dimen/about_aipolis_text_size"/>
+
+       <!--性别-->
+       <ImageView
+           android:id="@+id/id_user_sex"
+           android:layout_width="@dimen/sex_size"
+           android:layout_height="@dimen/sex_size"
+           android:layout_marginLeft="@dimen/item_margin"
+           android:src="@drawable/ic_sex_male" />
+   </LinearLayout>
+    <!--内容-->
+    <TextView
+        android:layout_marginLeft="58dp"
+        android:id="@+id/id_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+
+        android:textSize="@dimen/title_text_h"
+        android:textColor="@color/colorBlack" />
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:text="3小时前"
+        android:textSize="@dimen/title_text_s"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_itemCommentLy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_padding_small"
+        android:paddingBottom="@dimen/activity_padding_small"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big">
+        <!--头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_user_head_img"
+            android:layout_width="@dimen/head_img_small"
+            android:layout_height="@dimen/head_img_small"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/default_head_male" />
+
+        <!--垃圾桶-->
+        <!--<ImageView-->
+            <!--android:id="@+id/id_delete"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:src="@drawable/rubbish"/>-->
+        <!--姓名-->
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/id_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/id_user_head_img"
+            android:text="昵称" />
+        <!--性别-->
+        <ImageView
+            android:id="@+id/id_user_sex"
+            android:layout_width="@dimen/sex_size"
+            android:layout_height="@dimen/sex_size"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_toRightOf="@+id/id_user_name"
+            android:src="@drawable/ic_sex_male" />
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_user_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_toRightOf="@+id/id_user_head_img"
+            android:text="3小时前"
+            android:textSize="@dimen/title_text_s"
+            android:textColor="@color/colorAccent" />
+
+        <!--学校-->
+        <TextView
+            android:id="@+id/id_school"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/id_user_name"
+            android:text="华中师范大学"
+            android:textSize="@dimen/title_text_s"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <!--内容-->
+    <TextView
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_comment_padding_left"
+        android:layout_marginRight="@dimen/item_margin"
+        android:paddingBottom="@dimen/activity_padding_small"
+        android:ellipsize="end"
+        android:text="1"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="6"
+        android:textColor="@color/colorBlack" />
+</LinearLayout>

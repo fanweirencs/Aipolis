@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_top" />
+
+    <ScrollView
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rujuxuzhi"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/title_text_h" />
+    </ScrollView>
+
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/corner_btn_blue"
+        android:gravity="center"
+        android:text="我明白并遵守"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/title_text_m"
+        android:layout_marginBottom="@dimen/activity_padding_small"
+        android:layout_marginTop="@dimen/activity_padding_small"
+        android:id="@+id/id_needKnow" />
+
+</LinearLayout>

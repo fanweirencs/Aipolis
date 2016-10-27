@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shouye_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_padding_small"
+        android:layout_marginRight="@dimen/activity_padding_small"
+        android:layout_marginTop="@dimen/index_marginTB"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shouye01_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="末班车"
+            android:textColor="#000000"
+            android:textSize="@dimen/index_title" />
+
+        <TextView
+            android:id="@+id/shouye01_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8月23日08:15"
+            android:textColor="#ef8888"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/shoueye01_img"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_padding_small"
+        android:layout_marginRight="@dimen/activity_padding_small"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginTop="5dp" />
+
+    <!--头像 点赞  评论-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shoueye01_img"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="@dimen/activity_padding_small"
+        android:layout_marginLeft="@dimen/activity_padding_small"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shouye_touxiang"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/default_head_male" />
+        <TextView
+            android:id="@+id/shouye01_nickName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="桃花源"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/title_text_h" />
+
+        <TextView
+            android:id="@+id/shouye01_zanNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@+id/shouye01_commentNum"
+            android:layout_below="@+id/shoueye01_img"
+            android:drawableLeft="@drawable/ic_love_nomal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/shouye01_commentNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/shoueye01_img"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_comment_nomal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="8dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_below="@+id/shouye_touxiang" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="8dp"-->
+        <!--android:layout_below="@+id/textView1" />-->
+
+</RelativeLayout>

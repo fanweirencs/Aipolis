@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/id_bg"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/interest_board_game" />
+
+    <ImageView
+        android:id="@+id/id_select_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/id_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/id_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/interest_normal" />
+
+    <!--类别-->
+    <TextView
+        android:id="@+id/id_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_people_number"
+        android:text="动漫"
+        android:paddingLeft="3dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/activity_interest_title_size" />
+
+    <!--人数-->
+    <TextView
+        android:id="@+id/id_people_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_bg"
+        android:text="0"
+        android:paddingLeft="3dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/activity_interest_people_num_size" />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorDrawableBlue"
+    android:clickable="true"
+    android:orientation="vertical">
+    <!--android:clickable="true" 添加这个属性 防止抽屉的点击事件穿透-->
+    <include layout="@layout/content_menu_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--主页-->
+            <LinearLayout
+                android:id="@+id/id_menu_indexLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/drawer_margin_bottom"
+                android:layout_marginLeft="@dimen/draw_margin_left"
+                android:layout_marginTop="@dimen/drawer_margin_bottom"
+                android:padding="@dimen/item_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_index" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/draw_margin_text"
+                    android:text="@string/main_index"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_xh" />
+            </LinearLayout>
+
+            <!--资料-->
+            <LinearLayout
+                android:id="@+id/id_menu_dataLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/drawer_margin_bottom"
+                android:layout_marginLeft="@dimen/draw_margin_left"
+                android:padding="@dimen/item_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/draw_margin_text"
+                    android:text="@string/data"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_xh" />
+            </LinearLayout>
+            <!--印象-->
+            <LinearLayout
+                android:id="@+id/id_menu_impressLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/drawer_margin_bottom"
+                android:layout_marginLeft="@dimen/draw_margin_left"
+                android:padding="@dimen/item_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/menu_impress" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/draw_margin_text"
+                    android:gravity="center"
+                    android:text="@string/impress"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_xh" />
+            </LinearLayout>
+            <!--邀请-->
+            <LinearLayout
+                android:id="@+id/id_menu_inviteLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/drawer_margin_bottom"
+                android:layout_marginLeft="@dimen/draw_margin_left"
+                android:padding="@dimen/item_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_invite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/draw_margin_text"
+                    android:text="@string/invite"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_xh" />
+            </LinearLayout>
+            <!--关于-->
+            <LinearLayout
+                android:id="@+id/id_menu_aboutLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/drawer_margin_bottom"
+                android:layout_marginLeft="@dimen/draw_margin_left"
+                android:layout_marginTop="36dp"
+                android:padding="@dimen/item_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/draw_margin_text"
+                    android:text="@string/about"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_xh" />
+            </LinearLayout>
+            <!--设置-->
+            <!--<LinearLayout-->
+            <!--android:id="@+id/id_menu_settingLy"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginLeft="@dimen/draw_margin_left"-->
+            <!--android:padding="@dimen/item_margin">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/menu_setting" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/draw_margin_text"-->
+            <!--android:text="@string/setting"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="@dimen/title_text_xh" />-->
+            <!--</LinearLayout>-->
+            <!--退出-->
+            <LinearLayout
+                android:id="@+id/id_menu_exitLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/draw_margin_left"
+                android:padding="@dimen/item_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_exit" />
+
+                <TextView
+                    android:id="@+id/id_exitTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/draw_margin_text"
+                    android:text="@string/click_login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/title_text_xh" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

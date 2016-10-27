@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top" />
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/store_house_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+            <in.srain.cube.views.loadmore.LoadMoreListViewContainer
+                android:id="@+id/load_more_list_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cube_mints_white">
+                <ListView
+                    android:id="@+id/id_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:scrollbars="none" />
+            </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/comment_padding_size"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/id_comment_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_padding_small"
+            android:paddingRight="@dimen/activity_padding_small"
+            android:paddingBottom="@dimen/comment_padding_size"
+            android:paddingTop="@dimen/comment_padding_size"
+            android:hint="@string/click_to_input_your_comment"
+            android:textSize="@dimen/title_text_h"
+            android:background="@drawable/circle_comment_white"/>
+        <Button
+            android:id="@+id/id_send"
+            android:layout_width="50dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="发送"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--主布局-->
+    <include layout="@layout/content_main" />
+
+    <!--菜单布局 或者个人中心-->
+    <include layout="@layout/activity_drawer"/>
+
+    <!--<android.support.design.widget.NavigationView-->
+    <!--android:id="@+id/id_nv_menu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start"-->
+    <!--android:background="@color/colorDrawableBlue"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+    <!--app:headerLayout="@layout/content_menu_head"-->
+    <!--app:itemTextColor="@color/colorWhite"-->
+    <!--app:menu="@menu/menu_drawer" />-->
+</android.support.v4.widget.DrawerLayout>
+

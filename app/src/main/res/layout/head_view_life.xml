@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部 头像等-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_padding_small"
+        android:paddingRight="@dimen/activity_padding_small"
+        android:paddingTop="@dimen/activity_padding_small">
+
+        <!--头像  默认 男生头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_user_head_img"
+            android:layout_width="@dimen/head_img_size"
+            android:layout_height="@dimen/head_img_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/default_head_male" />
+
+        <!--垃圾桶-->
+        <ImageView
+            android:id="@+id/id_delete"
+            android:layout_marginTop="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/rubbish"/>
+        <!--名字-->
+        <TextView
+            android:id="@+id/id_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id_user_head_img"
+            android:text="lvan"
+            android:textColor="@color/colorPrimary" />
+        <!--时间-->
+        <TextView
+            android:textSize="@dimen/title_text_s"
+            android:id="@+id/id_pub_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_nick_name"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/id_user_head_img"
+            android:text="11.29"
+            android:textColor="@color/colorAccent" />
+        <!--学校-->
+        <TextView
+            android:id="@+id/id_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_nick_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="华中师范大学"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+    <!--内容-->
+    <TextView
+        android:id="@+id/id_content"
+        android:lineSpacingExtra="@dimen/item_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/title_text_h" />
+
+
+    <!--九宫格图片-->
+    <com.lzy.ninegrid.NineGridView
+        android:id="@+id/id_nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_padding_small"
+        android:paddingRight="@dimen/activity_padding_small"
+        app:ngv_mode="fill" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/activity_padding_small"
+        android:layout_marginBottom="@dimen/activity_padding_small"
+        android:orientation="horizontal">
+
+        <!-- 点赞  评论-->
+        <TextView
+            android:id="@+id/id_loveNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_love_nomal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/id_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_comment_nomal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+</LinearLayout>

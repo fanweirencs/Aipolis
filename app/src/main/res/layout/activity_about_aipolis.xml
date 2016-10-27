@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <!--顶部 文字 返回按钮-->
+    <RelativeLayout
+        android:id="@+id/id_topLy"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_size"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/activity_padding_small"
+        android:paddingRight="@dimen/activity_padding_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:onClick="back">
+            <ImageButton
+                android:id="@+id/id_backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_back_white"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/title_text_h" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/about"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_text_xh" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/aipolis_logo" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/slogan"
+        android:layout_marginBottom="@dimen/size_24"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:id="@+id/id_aipolis_brief"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/size_32"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_24"
+        android:background="@drawable/circle_blue_about"
+        android:gravity="center"
+        android:text="@string/aipolis_brief"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/id_aipolis_protocol"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/size_32"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_24"
+        android:background="@drawable/circle_blue_about"
+        android:gravity="center"
+        android:text="@string/aipolis_protocol"
+        android:textColor="@color/colorPrimary" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/id_privacy_policy"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginBottom="@dimen/size_24"-->
+    <!--android:background="@drawable/circle_blue_about"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/privacy_policy"-->
+    <!--android:textColor="@color/colorPrimary" />-->
+
+    <TextView
+        android:id="@+id/id_about_us"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/size_32"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_24"
+        android:background="@drawable/circle_blue_about"
+        android:gravity="center"
+        android:text="@string/about_us"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/id_opinions_suggestions"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/size_32"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_blue_about"
+        android:gravity="center"
+        android:text="@string/opinions_suggestions"
+        android:textColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/two_code"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="3dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/aipolis_two_code" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

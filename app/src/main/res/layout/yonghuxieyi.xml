@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="#0385ff">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="桃花源社区用户协议"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true" 
+        android:background="#ffffff">
+		<Button
+		    android:id="@+id/xieyi_fanhui"
+		    android:layout_width="150dp"
+		    android:layout_height="35dp"
+		    android:layout_centerHorizontal="true"
+		    android:background="@drawable/circle_login"
+            android:textColor="@color/colorWhite"
+            android:text="@string/i_understand_and_observe"
+		    android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#666666" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" >
+        </RelativeLayout>
+       
+        <RelativeLayout 
+            android:id="@+id/relativeLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/relativeLayout5"
+            android:layout_toLeftOf="@+id/relativeLayout6"
+            android:background="#ffffff">
+            <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >   
+           <RelativeLayout 
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+                         
+            <TextView 
+                android:id="@+id/tv01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                android:textSize="16sp"
+                android:textColor="#0385ff"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/yonghuxieyi"/>
+            
+          
+         </RelativeLayout>
+		  </ScrollView>
+        </RelativeLayout>
+
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

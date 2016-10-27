@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.aibang.aipolis"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 17
+        versionName "2.2"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            shrinkResources true
+        }
+        release {
+//            minifyEnabled true
+            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'cn.bmob.android:bmob-im:2.0.5@aar'
+    compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.orhanobut:logger:1.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //底部layout
+    compile 'com.aurelhubert:ahbottomnavigation:1.1.8'
+    //  下拉刷新
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    //加载更多
+    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
+    //圆形头像
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //九宫格图片
+    compile 'com.lzy.widget:ninegridview:0.1.4'
+    //时间控件
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
+    //视频
+    compile 'fm.jiecao:jiecaovideoplayer:3.0_preview'
+    //互助页面 切换
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    //照片选择
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    //自动布局
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+}

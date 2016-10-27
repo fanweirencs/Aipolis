@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Aipolis</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--登陆界面-->
+    <string name="account">账号  :</string>
+    <string name="password">口令</string>
+    <string name="remember_psw">记住口令</string>
+    <string name="login_text">芝麻开门</string>
+    <string name="register_text">申请入居</string>
+    <string name="forget_psw">忘记密码</string>
+
+    <!--消息界面-->
+    <string name="msg">消息</string>
+    <string name="no_data">暂无数据</string>
+    <string name="no_msg">暂无消息</string>
+    <!--底部文字-->
+    <string name="tab_index">首页</string>
+    <string name="tab_help">互助</string>
+    <string name="tab_msg">消息</string>
+    <string name="tab_life">生活</string>
+
+
+    <!--抽屉菜单的文字-->
+    <string name="my_information">我的资料</string>
+    <string name="my_interest">我的兴趣</string>
+    <string name="my_attention_people">我关注的人</string>
+    <string name="attention_me_people">关注我的人</string>
+    <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="exit">退出登录</string>
+    <string name="main_index">主页</string>
+
+    <string name="pub">发布</string>
+    <string name="index">首页</string>
+    <string name="help">互助</string>
+    <string name="invite">邀请</string>
+    <string name="invite_2">邀约</string>
+    <string name="data">资料</string>
+    <string name="impress">印象</string>
+    <string name="life">生活</string>
+    <string name="message">消息</string>
+    <string name="search">搜索</string>
+    <string name="back">返回</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="group_chat">群聊</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+
+
+    <!--我的资料-->
+    <string name="nick_name">昵称</string>
+    <string name="school">学校</string>
+    <string name="department">院系</string>
+    <string name="birthday">生日</string>
+    <string name="email">邮箱</string>
+    <string name="city">城市</string>
+    <string name="interest">兴趣</string>
+    <string name="phone">手机号码</string>
+    <string name="signature">个性签名</string>
+    <string name="save">保存</string>
+
+    <!--关于桃花源-->
+    <string name="aipolis_brief">桃花源简介</string>
+    <string name="aipolis_protocol">桃花源协议</string>
+    <string name="privacy_policy">隐私条款</string>
+    <string name="about_us">关于我们</string>
+    <string name="opinions_suggestions">意见建议</string>
+
+    <string name="two_code">二维码</string>
+    <!--版权声明-->
+    <string name="copyright">©  2015-2016 Aipolis.com.All rights reserved.</string>
+    <string name="load_faild">加载失败\n</string>
+    <string name="click_to_input_your_comment">点击输入你的评论</string>
+    <string name="please_input_comment">请输入评论内容</string>
+    <string name="empty_text" />
+    <string name="reply">回复</string>
+    <string name="comment_your">  评论了你的 </string>
+    <string name="reply_your">  回复了你 </string>
+
+    <string name="followers">Followers</string>
+    <string name="likes">Likes</string>
+    <string name="following">Following</string>
+
+
+    <!--加载更多 文字-->
+    <string name="loading">加载中···</string>
+    <string name="no_comment">暂无数据</string>
+    <string name="no_more">没有更多数据</string>
+    <string name="this_time_you_want_to_say">这一刻,你想说···</string>
+    <string name="select_province">选择省份</string>
+    <string name="select_school">选择学校</string>
+    <string name="comment_you_help">" 评论了你的互助内容:"</string>
+
+
+    <string name="already_finish">已完成</string>
+    <string name="not_finish">等待中</string>
+    <string name="please_login">请登录</string>
+    <string name="attention_you">关注了你</string>
+    <string name="i_understand_and_observe">我明白且遵守</string>
+    <string name="please_choose_fin_password_style">请选择个人邮箱或手机号码找回密码</string>
+    <string name="click_login">点击登录</string>
+    <string name="my_head">我的头像</string>
+    <string name="aipolis">桃花源</string>
+    <string name="phoneNumberOrEmail">手机号或邮箱</string>
+
+
+    <!--意见建议页面 相关-->
+    <string name="question_and_suggestions">问题和建议</string>
+    <string name="picture_and_question">图片(选填,提供问题截图)</string>
+    <string name="thinks_your_opinion">感谢您的反馈,请简要描述您的问题和建议</string>
+    <string name="connect_phone">联系电话</string>
+    <string name="sure_submit">确认提交</string>
+    <string name="double_to_top">双击标题栏回到顶部</string>
+    <string name="read">阅读</string>
+    <string name="please_choose_your_interest">选择您的兴趣</string>
+    <string name="lazy_no_write">这家伙很懒,还没写</string>
+    <string name="lazy_not_choose">这家伙很懒,还没选择</string>
+    <string name="lazy_not_pub">这家伙很懒,还没发布</string>
+    <string name="input_your_impress">输入你的印象</string>
+
+
+</resources>

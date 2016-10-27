@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--顶部布局  返回按钮  消息文字  删除图标-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_size"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big">
+
+        <ImageButton
+            android:id="@+id/id_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_arrow_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_information"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title_size" />
+
+        <Button
+            android:id="@+id/id_saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="end|center"
+            android:text="@string/save"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title_text_m" />
+
+    </RelativeLayout>
+
+    <!--头像-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_head_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/my_head"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_user_head_img"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_32"
+            android:background="@null"
+            android:src="@mipmap/default_head_male" />
+
+    </RelativeLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+    <!--昵称-->
+    <LinearLayout
+        android:id="@+id/id_nickNameLy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/nick_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <TextView
+            android:id="@+id/id_nick_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_info_margin"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="你的昵称"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--学校-->
+    <LinearLayout
+        android:id="@+id/id_school_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/school"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <TextView
+            android:id="@+id/id_school"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_info_margin"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="填写学校,发现校友"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--院系-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/department"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <EditText
+            android:id="@+id/id_department"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/my_info_margin"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="填写院系，寻找朋友"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--生日-->
+    <LinearLayout
+        android:id="@+id/id_birth_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/birthday"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <TextView
+            android:id="@+id/id_birthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_info_margin"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="你的生日"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/title_text_m" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--邮箱-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <EditText
+            android:id="@+id/id_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_info_margin"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="常用邮箱"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--城市-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/city"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <EditText
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_info_margin"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="你的城市"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--兴趣-->
+    <LinearLayout
+        android:id="@+id/id_interestLy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/interest"
+            android:paddingLeft="9dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <TextView
+            android:id="@+id/id_interest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_to" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--手机号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/phone"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <EditText
+            android:id="@+id/id_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="你的号码"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+    <!--个性签名-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_info_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/signature"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/my_info_size" />
+
+        <EditText
+            android:id="@+id/id_signature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="留下一句最能代表你的话"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my_info_size" />
+
+    </LinearLayout>
+    <!--水平线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBomLine" />
+
+</LinearLayout>
+
+</ScrollView>

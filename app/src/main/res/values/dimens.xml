@@ -1,0 +1,140 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_padding_big">16dp</dimen>
+    <dimen name="activity_padding_small">8dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--每个页面 顶部大小-->
+    <dimen name="topbar_size">45dp</dimen>
+
+
+    <!--顶部文字-->
+    <dimen name="title_size">20sp</dimen>
+
+
+    <!--底部图标大小-->
+    <dimen name="tab_icon_size">32dp</dimen>
+
+
+    <!--首页显示的页面布局相关-->
+    <dimen name="index_marginLR">4dp</dimen>
+    <dimen name="index_marginTB">6dp</dimen>
+    <dimen name="index_title">16sp</dimen>
+
+    <!--登录界面相关-->
+    <dimen name="login_margin">96dp</dimen>
+    <dimen name="login_top">2dp</dimen>
+
+    <!--listview item 间隔-->
+    <dimen name="item_margin">5dp</dimen>
+
+
+    <!--消息界面-->
+    <dimen name="msg_text_size">24sp</dimen>
+
+    <!--头像大小-->
+    <dimen name="head_img_size">50dp</dimen>
+    <dimen name="head_img_small">35dp</dimen>
+
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_38">38dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+
+
+    <!--文字-->
+    <dimen name="title_text_xxh">24sp</dimen>
+    <dimen name="title_text_xh">20sp</dimen>
+    <dimen name="title_text_m">18sp</dimen>
+    <dimen name="title_text_h">16sp</dimen>
+    <dimen name="title_text_sb">14sp</dimen>
+    <dimen name="title_text_s">12sp</dimen>
+    <dimen name="video_top">12dp</dimen>
+
+    <!--我的资料页面文章大小-->
+
+    <dimen name="my_info_size">18sp</dimen>
+    <!--首页 评论 距离左边的距离-->
+    <dimen name="item_comment_padding_left">68dp</dimen>
+    <dimen name="comment_padding_size">6dp</dimen>
+
+    <dimen name="top_bar_size">45dp</dimen>
+
+
+    <!--抽屉左边距-->
+    <dimen name="draw_margin_left">40dp</dimen>
+    <!--抽屉文字和图片距离-->
+    <dimen name="draw_margin_text">26dp</dimen>
+    <dimen name="drawer_margin_bottom">10dp</dimen>
+
+    <!--性别的大小-->
+    <dimen name="sex_size">15dp</dimen>
+    <dimen name="personal_margin">32dp</dimen>
+
+    <!--发布 互助 标题大小-->
+    <dimen name="help_height">48dp</dimen>
+    <dimen name="help_margin_top">16dp</dimen>
+    <dimen name="btn_height">35dp</dimen>
+    <dimen name="btn_width">150dp</dimen>
+    <!--互助页面 标签具体顶部头像-->
+    <dimen name="invite_style_margin">24dp</dimen>
+    <dimen name="invite_style_margin2">18dp</dimen>
+    <dimen name="help_margin_left">48dp</dimen>
+
+    <!--顶部 menu 大小-->
+    <dimen name="top_icon_size">30dp</dimen>
+
+
+    <!--资料页面-->
+    <dimen name="my_info_height">55dp</dimen>
+    <dimen name="my_info_head_height">96dp</dimen>
+    <dimen name="my_info_margin">0dp</dimen>
+    <dimen name="about_aipolis_text_size">16sp</dimen>
+
+    <!--登录界面 -->
+    <dimen name="login_left_right_margin">50dp</dimen>
+    <dimen name="interest_grid_padding">8dp</dimen>
+
+
+    <!--兴趣页面-->
+    <dimen name="activity_interest_title_size">16sp</dimen>
+    <dimen name="activity_interest_people_num_size">14sp</dimen>
+
+    <!--个人主页-->
+    <dimen name="personal_text_size">16sp</dimen>
+    <dimen name="personal_school_text_size">12sp</dimen>
+    <dimen name="personal_margin_top">16dp</dimen>
+    <dimen name="personal_img_size">64dp</dimen>
+    <dimen name="personal_img_margin_size">8dp</dimen>
+    <dimen name="arrow_to_size">24dp</dimen>
+    <dimen name="height_title">48.0dip</dimen>
+
+    <dimen name="ts_13">13sp</dimen>
+    <dimen name="ts_10">10sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <dimen name="height_2">2dip</dimen>
+    <dimen name="height_line">1dip</dimen>
+    <dimen name="height_40">40dip</dimen>
+    <dimen name="height_50">50dip</dimen>
+    <dimen name="height_message">75dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+
+</resources>

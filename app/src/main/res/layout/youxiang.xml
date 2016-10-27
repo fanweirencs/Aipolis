@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/id_topLy"
+   	    android:layout_height="@dimen/topbar_size"
+   	    android:background="#0385ff">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="密码找回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layouy01"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" 
+        android:layout_below="@+id/layout_title"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/zhuceye06">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="个人邮箱"
+                android:gravity="center"
+                android:textColor="#0385ff"/>
+            <EditText 
+                android:id="@+id/youxiang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:gravity="center"
+               />
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+
+      <Button
+          android:id="@+id/tijiaomima"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_below="@+id/layouy01"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="30dp"
+          android:text="确认提交"
+          android:background="@drawable/circle_login"
+          android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
